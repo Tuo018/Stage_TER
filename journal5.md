@@ -117,8 +117,8 @@ batsched
 ***
 we discuss this job's perspective
 
-![oops](TER1.jpg)
-![oops](TER2.jpg)
+Stage overview
+![alt text](https://github.com/Tuo018/Stage_TER/blob/master/overview1.jpg)
 
 # Mecredi 28 fevrier
 install __colmet__ and know **NAS**

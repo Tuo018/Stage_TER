@@ -25,7 +25,9 @@
 5. continue
 
 ### Batsim overview
-![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Batsim.png)
+![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Batsim.png)<br/>
+### Batsim inner mecanic
+![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Images/batsim_inner_mecanic.png)
 ***
 
 # Journal_3
@@ -162,10 +164,14 @@ ssh-keygen -t rsa
 ```
 Continue about *Grid5000*
 ***
-# Vendredi 02 Mars
-Review
 
-**Batsim**
+# Journal_6
+## Vendredi 02 Mars
+### Review
+
+**Batsim**<BR/>
 A batch scheduler simulator(jobs and resources Management)</br>
-**Colmet**
-A monitoring tool to collect metrics about jobs running in a distributed environnement
+**Colmet**<br/>
+A monitoring tool to collect metrics about jobs running in a distributed environnement<br/>
+**NAS**<br/>
+The NAS Parallel Benchmarks (NPB) are a small set of programs designed to help evaluate the performance of parallel supercomputers.

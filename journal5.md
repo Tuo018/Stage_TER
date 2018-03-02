@@ -27,6 +27,9 @@ read the documents
 4. batsim inner mechanics
 5. continue
 
+Batsim overview
+![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Batsim.png)
+
 # Jeudi 08 fevrier
 read the documents
 ### Batsim: a Realistic Language-Independent Resources and Jobs Management Systems Simulator

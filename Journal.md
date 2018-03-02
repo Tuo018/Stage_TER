@@ -165,7 +165,7 @@ ssh-keygen -t rsa
 Continue about *Grid5000*
 ***
 
-# Journal_6
+# Journal_7
 ## Vendredi 02 Mars
 ### Review
 

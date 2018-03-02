@@ -1,9 +1,8 @@
 # Journal_1
 ## Jeudi 01 fevrier
-Read the documents
-### Big Data and HPC collocation: Using HPC idle resources for Big Data Analytics
+### Read the documents
+#### Big Data and HPC collocation: Using HPC idle resources for Big Data Analytics
 [Go to the link of documents](https://hal.archives-ouvertes.fr/hal-01633507/file/bigdata_hpc_colocation.pdf)
-
 1. to know the raison why we need **Big Data**' and **HPC** collocaton
 2. to know the problem of collocation between Big Data and HPC
 3. th solution
@@ -15,9 +14,9 @@ Read the documents
 
 # Journal_2
 ## Jeudi 07 fevrier
-Read the documents
-### Batsim: a Realistic Language-Independent Resources and Jobs Management Systems Simulator
-#### part1
+### Read the documents
+#### Batsim: a Realistic Language-Independent Resources and Jobs Management Systems Simulator
+##### part1
 [Go to the link of documents](https://hal.archives-ouvertes.fr/hal-01333471/document)
 1. to know what is **batsim** and why we need it
 2. the general description of batsim
@@ -28,11 +27,12 @@ Read the documents
 ### Batsim overview
 ![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Batsim.png)
 ***
+
 # Journal_3
 ## Jeudi 08 fevrier
-Read the documents
-### Batsim: a Realistic Language-Independent Resources and Jobs Management Systems Simulator
-#### part2
+### Read the documents
+#### Batsim: a Realistic Language-Independent Resources and Jobs Management Systems Simulator
+##### part2
 [Go to the link of documents](https://hal.archives-ouvertes.fr/hal-01333471/document)
 5. batsim evaluation experiment introduction of **profile** generation the type of profile
 the fonction of profile
@@ -65,9 +65,9 @@ User reaction
 
 # Journal_4
 ## Jeudi 14 fevrier
-Read the documents
-### Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms
-#### part1
+### Read the documents
+#### Versatile, Scalable, and Accurate Simulation of Distributed Applications and Platforms
+##### part1
 [Go to the link of documents](https://hal.inria.fr/hal-01017319v2/document)
 In this dpcuemnt,we introduce the importance of simulation,and the developpement of simulation.
 We make a comparaison with many different types simulation and we prefere introduce **SimGrid**. The most important is Quote break
@@ -77,17 +77,14 @@ And there are cruciel experiments about analysis among accuracy,scalability and 
 ***
 
 ### Learn how to use Grid5000
-[Get an account](https://www.grid5000.fr/mediawiki/index.php/Grid5000:Get_an_account)
-
-[UsagePolicy](https://www.grid5000.fr/mediawiki/index.php/Grid5000:UsagePolicy)
-
-[Getting Started](https://www.grid5000.fr/mediawiki/index.php/Getting_Started)
+1. [Get an account](https://www.grid5000.fr/mediawiki/index.php/Grid5000:Get_an_account)</br>
+2. [UsagePolicy](https://www.grid5000.fr/mediawiki/index.php/Grid5000:UsagePolicy)</br>
+3. [Getting Started](https://www.grid5000.fr/mediawiki/index.php/Getting_Started)
 ***
 
 # Journal_5
 ## Jeudi 15 fevrier
-Install **Batsim** and simple Test
-
+### Install **Batsim** and simple Test</br>
 [Install and run **batsim**](https://github.com/oar-team/batsim/blob/master/doc/run_batsim.md)
 ```
 curl https://nixos.org/nix/install | sh
@@ -107,15 +104,15 @@ batsim -p platforms/small_platform.xml -w workload_profiles/test_workload_profil
 
 batsched
 ```
-We discuss this stage's **perspective**
-
+We discuss this stage's **perspective**</br>
 Overview
 ![alt text](https://github.com/Tuo018/Stage_TER/blob/master/overview1.jpg)
 ![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Images/overview2.jpg)
 ***
+
 # Journal_6
 ## Mecredi 28 fevrier
-Install __colmet__ and know **NAS**
+### Install __colmet__ and know **NAS**
 #### **Colmet**
 ##### Introduction
 > **Colmet** is a monitoring tool to collect metrics about jobs running in a
@@ -127,21 +124,18 @@ Install __colmet__ and know **NAS**
 > * zeromq: transport the metrics across the network.
 > * hdf5: store the metrics on the filesystem.
 
-[Downlaod colmet](https://github.com/oar-team/colmet.git)
-
-Install, upgrade, uninstall colmet with these commands:
+[Downlaod colmet](https://github.com/oar-team/colmet.git)</br>
+##### Install, upgrade, uninstall colmet with these commands:
 ```
 $ pip install [--user] colmet
 $ pip install [--user] --upgrade colmet
 $ pip uninstall colmet
 ```
 Collect metrics about jobs running on localhost *127.0.0.1*
-![oops](colmet_node.png)
+![oops](colmet_node.png)<br/>
+[More information about Colmet](https://github.com/oar-team/colmet)
 
 You should know about **Metric**
-
-
-[More information about Colmet](https://github.com/oar-team/colmet)
 
 #### NAS
 ##### Introduction
@@ -157,7 +151,7 @@ The NAS Parallel Benchmarks (NPB) are a small set of programs designed to help e
 
 We just need to know which **benmarks** we'll use in our experiemnts
 
-###### Connect to Grid5000
+#### Connect to Grid5000
 ```
 ssh tzhao@access.grid5000.fr
 ```
@@ -166,9 +160,12 @@ We have to submit the *public key* in our Grid5000 account
 ```
 ssh-keygen -t rsa
 ```
+Continue about *Grid5000*
 ***
 # Vendredi 02 Mars
 Review
 
 **Batsim**
-A batch scheduler simulator(jobs and resources Management)
+A batch scheduler simulator(jobs and resources Management)</br>
+**Colmet**
+A monitoring tool to collect metrics about jobs running in a distributed environnement

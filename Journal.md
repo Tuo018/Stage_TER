@@ -169,9 +169,23 @@ Continue about *Grid5000*
 ## Vendredi 02 Mars
 ### Review
 
-**Batsim**<BR/>
-A batch scheduler simulator(jobs and resources Management)</br>
+**Batsim**<br/>
+How to dispath jobs and allocate resrouces
+> A batch scheduler -- AKA Resources and Jobs Management System (RJMS)
+> is a system that manages resources in large-scale computing centers,
+> notably by scheduling and placing jobs, and by setting up energy
+> policies.</br>
+
 **Colmet**<br/>
-A monitoring tool to collect metrics about jobs running in a distributed environnement<br/>
+To get the trace
+> A monitoring tool to collect metrics about jobs running in a distributed > environnement<br/>
+
 **NAS**<br/>
-The NAS Parallel Benchmarks (NPB) are a small set of programs designed to help evaluate the performance of parallel supercomputers.
+To get the trace
+> The NAS Parallel Benchmarks (NPB) are a small set of programs designed to > help evaluate the performance of parallel supercomputers.
+
+#### Grid5000
+A set of hosts, free resources and respect the specification to use  
+> Grid'5000 is a large-scale and versatile testbed for experiment-driven
+> research in all areas of computer science, with a focus on parallel and
+> distributed computing including Cloud, HPC and Big Data.

@@ -222,7 +222,7 @@ To terminate your reservation and return to the frontend
 ```
 exit
 ```
-![alt text][https://github.com/Tuo018/Stage_TER/blob/master/Images/To_reserve_three_hosts%20_three_nodes.png]
+![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Images/To_reserve_three_hosts%20_three_nodes.png)
 
 **walltime**<br/>
 The walltime is the expected duration you envision to complete your work.<br/>
@@ -241,8 +241,7 @@ Close the connection
 ```
 logout
 ```
-![alt text][logo]
-[logo]:https://github.com/Tuo018/Stage_TER/blob/master/Images/OARSH.pngs
+![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Images/OARSH.pngs)
 
 5. Reservations in advance
  ```

@@ -241,7 +241,8 @@ Close the connection
 ```
 logout
 ```
-![alt text][https://github.com/Tuo018/Stage_TER/blob/master/Images/OARSH.pngs]
+![alt text][logo]
+[logo]:https://github.com/Tuo018/Stage_TER/blob/master/Images/OARSH.pngs
 
 5. Reservations in advance
  ```

@@ -224,23 +224,23 @@ exit
 ```
 ![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Images/To_reserve_three_hosts%20_three_nodes.png)
 
-**walltime**<br/>
-The walltime is the expected duration you envision to complete your work.<br/>
-**OARSH**<br/>
-Oarsh is a wrapper around ssh that enables the tracking of user jobs inside compute nodes.<br/>
-Example:
-Change the node
-```
-oarsh graphene-97.nancy
-```
-Connect the node
-```
-oarsh graphene-97.nancy
-```
-Close the connection
-```
-logout
-```
+ **walltime**<br/>
+ The walltime is the expected duration you envision to complete your work.<br/>
+ **OARSH**<br/>
+ Oarsh is a wrapper around ssh that enables the tracking of user jobs inside compute nodes.<br/>
+ Example:
+ Change the node
+ ```
+ oarsh graphene-97.nancy
+ ```
+ Connect the node
+ ```
+ oarsh graphene-97.nancy
+ ```
+ Close the connection
+ ```
+ logout
+ ```
 ![alt text](https://github.com/Tuo018/Stage_TER/blob/master/Images/OARSH.pngs)
 
 5. Reservations in advance

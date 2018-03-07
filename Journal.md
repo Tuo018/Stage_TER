@@ -177,15 +177,112 @@ How to dispath jobs and allocate resrouces
 > policies.</br>
 
 **Colmet**<br/>
-To get the trace
+Monitoring of applications
 > A monitoring tool to collect metrics about jobs running in a distributed > environnement<br/>
 
 **NAS**<br/>
 To get the trace
-> The NAS Parallel Benchmarks (NPB) are a small set of programs designed to > help evaluate the performance of parallel supercomputers.
+> The NAS Parallel Benchmarks (NPB) are a small set of programs designed to help evaluate the performance of parallel supercomputers.
 
 #### Grid5000
 A set of hosts, free resources and respect the specification to use  
 > Grid'5000 is a large-scale and versatile testbed for experiment-driven
 > research in all areas of computer science, with a focus on parallel and
 > distributed computing including Cloud, HPC and Big Data.
+
+***
+
+# Journal_8
+## Mecredi 07 Mars
+
+### Utilization of Grid5000
+1. Connect to a Grid'5000 access machine
+```
+ssh tzhao@access.grid5000.fr
+```
+2. Connecting to a Grid'5000 site
+```
+ssh Grenoble
+```
+**Attention**<br/>
+> Get a different home directory on each Grid'5000 site. (use **Rsync** or **scp** to move data around.)<br/>
+> Grid'5000 does NOT have a BACKUP service for Grid'5000's users home directories
+
+3. Discovering and visualizing resources<br/>
+two ways to check the resource status on site<br/>
+[Monika](https://intranet.grid5000.fr/oar/Nancy/monika.cgi)<br/>
+[Gantt](https://intranet.grid5000.fr/oar/Nancy/drawgantt-svg/)
+4. Reserving resources with OAR: the basics<br/>
+```
+oarsub -I
+oarsub -l host=3 -I == oarsub -l nodes=3 -I
+oarsub -l core=1 -I
+```
+To terminate your reservation and return to the frontend
+```
+exit
+```
+![alt text][https://github.com/Tuo018/Stage_TER/blob/master/Images/To_reserve_three_hosts%20_three_nodes.png]
+**walltime**<br/>
+The walltime is the expected duration you envision to complete your work.<br/>
+**OARSH**<br/>
+Oarsh is a wrapper around ssh that enables the tracking of user jobs inside compute nodes.<br/>
+Example:
+Change the node
+```
+oarsh graphene-97.nancy
+```
+Connect the node
+```
+oarsh graphene-97.nancy
+```
+Close the connection
+```
+logout
+```
+![alt text][https://github.com/Tuo018/Stage_TER/blob/master/Images/OARSH.png]
+5. Reservations in advance
+ ```
+oarsub -l nodes=3,walltime=3 -r '2018-03-08 13:30:00'
+ ```
+6. Job management
+```
+oardel 12345
+```
+7. Selection of resources using OAR properties
+ - Nodes from a given cluster
+ ```
+ fluxembourg: 	
+ oarsub -p "cluster='granduc'" -l nodes=5,walltime=2 -I
+ ```
+ - Nodes with Infiniband QDR interfaces
+ ```
+ fgrenoble: 	
+ oarsub -p "ib='QDR'" -l nodes=5,walltime=2 -I
+ ```
+ - Nodes with power sensors and GPUs
+ ```
+ flyon: 	
+ oarsub -p "wattmeter='YES' and gpu='YES'" -l nodes=2,walltime=2 -I
+ ```
+ - Since -p accepts SQL
+ ```
+ fnancy: 	
+ oarsub -p "wattmeter='YES' and network_address not in ('graphene-140.nancy.grid5000.fr', 'graphene-141.nancy.grid5000.fr')" -l nodes=5,walltime=2 -I
+ ```
+8. Extending the duration of a reservation
+```
+oarwalltime 12345 +1:30
+```
+9. Monitoring your nodes
+ - **Kwapi **
+ > Kwapi uses probes at the infrastructure level to collect information about network usage and power consumption: it does not require any specific application running on the nodes.<br>
+ - **Ganglia**
+ > Ganglia uses a service running on the nodes to collect information.<br/>
+
+ [Measurements tutorial](https://www.grid5000.fr/mediawiki/index.php/Measurements_tutorial)
+
+**Question**:
+1. fnancy -->> graphene, how to come back<br/>
+*fnancy* : reserve resources (get a job id)
+*graphene* : check out the host exactment  
